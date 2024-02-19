@@ -6,6 +6,13 @@ body {
   background-color: #e3f2fd;
 }
 
+@media (max-width: 650px) {
+  body {
+    transform: rotate(90deg);
+    overflow-x: hidden;
+  }
+}
+
 .container {
   width: 780px;
   border-radius: 20px;
@@ -91,7 +98,7 @@ header .column span {
 
 .piano-keys .white.active {
   box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to bottom #fff 0%, #eee 100%);
+  background: linear-gradient(#fff 0%, #eee 100%);
 }
 
 .piano-keys .black {
@@ -101,7 +108,7 @@ header .column span {
   margin: 0 -22px 0 -22px;
   border: solid black 1px;
   border-radius: 0 0 5px 5px;
-  background: linear-gradient(#333, #000);
+  background: linear-gradient(#000, #fff, #000);
 }
 
 .piano-keys .black.active {
